@@ -1,25 +1,9 @@
-# ---
-# jupyter:
-#   jupytext:
-#     formats: ipynb,py:percent
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.3'
-#       jupytext_version: 1.19.5
-#   kernelspec:
-#     display_name: Python 3 (ipykernel)
-#     language: python
-#     name: python3
-# ---
+#!/usr/bin/env python
+# coding: utf-8
 
-# %%
-# %pip install jupytext
+# In[3]:
 
-# %%
-# !jupytext --set-formats ipynb,py:percent Sampling.ipynb
 
-# %%
 import pandas as pd
 import numpy as np
 from scipy.stats import beta
@@ -109,12 +93,12 @@ plt.show = store_plot
 ### MATH STARTS HERE
 
 ### USER INPUTS
-part_cost = int(input("Enter Part Cost: "))
-inspection_cost = int(input("Enter Inspection Cost: "))    
-init_Inspection_cost = int(input("Enter Initial Inspection Cost: "))
+part_cost = float(input("Enter Part Cost: "))
+inspection_cost = float(input("Enter Inspection Cost: "))    
+init_Inspection_cost = float(input("Enter Initial Inspection Cost: "))
 batch_size = int(input("Enter Batch Size: "))
-alpha_param = int(input("Enter Alpha: "))
-beta_param = int(input("Enter Beta: "))
+alpha_param = float(input("Enter Alpha: "))
+beta_param = float(input("Enter Beta: "))
 
 ### BETA DISTRIBUTION CREATION AND GRAPH
 beta_distribution = beta(a=alpha_param, b=beta_param)
@@ -358,8 +342,21 @@ reset_button.pack(pady=10)
 
 results_window.mainloop()
 
-# %%
 
-# %%
+# In[ ]:
 
-# %%
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
